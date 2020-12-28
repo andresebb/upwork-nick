@@ -352,3 +352,326 @@ h2 {
   font-weight: bold;
   color: white;
 }
+
+/* ///////////////////////// Call center */
+
+.call-center {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.call-side {
+  background: #221e1f;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.call-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo-check {
+  padding: 16px 20px;
+  background: #0a0a0a;
+  border-radius: 50%;
+  margin-right: 26px;
+  font-size: 24px;
+  color: white;
+}
+
+.call-text {
+  width: 120px;
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+/* ////////////////////// PARTNERS */
+
+.partners {
+  display: flex;
+  padding: 32px;
+  align-items: center;
+  position: relative;
+}
+
+.partners::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 28px 0 28px;
+  border-color: white transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+
+.partners-text {
+  margin-right: 24px;
+}
+
+.partner-title {
+  color: black;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.partners-text p {
+  line-height: 1.5;
+}
+
+/* ///////////////////////////// TESTIMONIAL */
+
+.testimonials {
+  background: url("./images/price.jpg") left/cover fixed no-repeat;
+  padding: 32px;
+}
+
+.testimonial__title {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-top: 36px;
+}
+
+.testimonial__title h2 {
+  text-align: center;
+  color: white;
+}
+
+.box-testimonial {
+  width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box-testimonial p {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+.person-text {
+  margin-bottom: 24px;
+}
+
+.name-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.name-image img {
+  border-radius: 50%;
+  width: 80px;
+  height: 60px;
+  margin-right: 16px;
+}
+
+.testimonial-anclo {
+  border: 2px solid white;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* /////////////////////////REPAIR */
+
+.repair {
+  padding: 64px 32px;
+  position: relative;
+}
+
+.repair::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 28px 28px 0 28px;
+  border-color: white transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+}
+
+.repair-title {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.repair-title h2 {
+  color: black;
+}
+
+.repair-box-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.repair-box-title img {
+  margin-right: 16px;
+}
+
+.repair-box-title p {
+  font-weight: bold;
+}
+.repair-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.repair-box {
+  padding: 24px;
+}
+
+/* //////////////////PRICING */
+
+.pricing {
+  background: url("./images/lego.jpg") left/cover fixed no-repeat;
+  padding: 32px;
+}
+
+.our-pricing__title {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-top: 36px;
+  text-align: center;
+}
+
+.pricing-box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pricing-box {
+  background: white;
+  padding: 24px;
+  padding-top: 60px;
+  margin: 26px;
+  height: 220px;
+  width: 50%;
+  position: relative;
+  border-bottom: 5px solid #0e1e56;
+}
+
+.pricing-number {
+  background: #0e1e56;
+  color: white;
+  font-size: 34px;
+  position: absolute;
+  padding: 14px;
+  border-radius: 16px;
+  font-weight: lighter;
+  top: -36px;
+  left: 40%;
+}
+
+.pricing-title {
+  color: #0e1e56;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.contact-pricing {
+  margin-top: 24px;
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px 12px;
+  border: 3px solid white;
+  border-radius: 6px;
+}
+
+/* //////////////////////////////// FOOTER   */
+
+.footer {
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 51px 32px;
+  color: white;
+}
+
+.footer-item {
+  width: 25%;
+  padding: 24px;
+}
+.mision_title {
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+
+.mision-text {
+  line-height: 1.5;
+  font-size: 18px;
+  color: #aaaa9a;
+}
+
+.footer-logo img {
+  width: 90%;
+  text-align: center;
+}
+
+.contact-title,
+.contact-consult {
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-number {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.contact-low {
+  color: #aaaa9a;
+}
+
+.footer-ul {
+  padding: 0;
+}
+
+.footer-ul a {
+  margin: 0;
+}
+
+.footer-ul li {
+  border-bottom: 1px solid white;
+}
+
+.subfooter {
+  background: #191919;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: white;
+}
+
+.subfooter-right {
+  display: flex;
+}
+
+.subfooter-right p {
+  margin-left: 12px;
+}
