@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+li {
+  list-style: none;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 13px;
+}
+ul {
+  padding: 0;
+}
+
+.navigation__list {
+  padding: 0;
+  display: flex;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+}
+h2 {
+  margin: 0;
+  color: white;
+}
+
+.header {
+  background: #0e1e56;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  right: 0;
+  box-shadow: 0px 2px 3px black;
+}
+
+.login {
+  padding: 12px 10px;
+  background: #ad585e;
+  border-radius: 6px;
+}
+.header__image {
+  height: 100%;
+}
+
+.header__image img {
+  height: 100%;
+}
+
+/* //////////////////////////////HERO */
+
+.hero {
+  height: 45vh;
+  background: black;
+  background: url("./images/testimonial.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  color: white;
+  margin: 14px;
+  font-weight: 300;
+  font-size: 38px;
+}
+
+.hero p {
+  color: white;
+}
+
+/* /////////////////////////TESTIMONIALS */
+
+.testimonials {
+  padding: 58px 42px;
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-box {
+  background: #333333;
+  margin: 2px;
+  border-radius: 24px;
+  padding: 28px;
+  max-width: 500px;
+  color: white;
+}
+
+.testimonial-image {
+  display: flex;
+  margin: 12px 0;
+  align-items: center;
+}
+
+.testimonial-image img {
+  width: 40px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.testimonial-span {
+  font-size: 14px;
+  margin: 4px;
+  font-weight: 500;
+}
+
+.testimonial-span.sub {
+  color: #aaaa9a;
+}
+
+/* //////////////////////////////// FOOTER   */
+
+.footer {
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 51px 32px;
+  color: white;
+}
+
+.footer-item {
+  width: 25%;
+  padding: 24px;
+}
+.mision_title {
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+
+.mision-text {
+  line-height: 1.5;
+  font-size: 18px;
+  color: #aaaa9a;
+}
+
+.footer-logo img {
+  width: 90%;
+  text-align: center;
+}
+
+.contact-title,
+.contact-consult {
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-number {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.contact-low {
+  color: #aaaa9a;
+}
+
+.footer-ul {
+  padding: 0;
+}
+
+.footer-ul a {
+  margin: 0;
+}
+
+.footer-ul li {
+  border-bottom: 1px solid white;
+}
+
+.subfooter {
+  background: #191919;
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: white;
+}
+
+.subfooter-right {
+  display: flex;
+}
+
+.subfooter-right p {
+  margin-left: 12px;
+}
