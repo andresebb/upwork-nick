@@ -10,7 +10,6 @@ a {
   list-style: none;
   text-decoration: none;
   color: white;
-  margin-left: 30px;
   font-weight: bold;
   font-size: 13px;
 }
@@ -21,6 +20,10 @@ ul {
 .navigation__list {
   padding: 0;
   display: flex;
+}
+
+.navigation__list a {
+  margin-left: 30px;
 }
 
 p {
@@ -57,6 +60,57 @@ h2 {
 
 .header__image img {
   height: 100%;
+}
+
+/* //// MEnu */
+
+.header__menu--container {
+  display: none;
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 12px;
+  }
+
+  .header__menu--container {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+  }
+  .navigation__list {
+    display: block;
+    direction: rtl;
+    margin-top: 78px;
+    padding: 26px;
+  }
+  .navigation__list li {
+    margin-bottom: 24px;
+    border-bottom: 1px solid white;
+  }
+
+  .navigation__list li:last-child {
+    border-bottom: none;
+  }
+
+  .navigation__list a {
+    font-size: 24px;
+  }
+}
+
+.active-burger {
+  display: block;
+  background: #0e1d52;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
 }
 
 /* //////////////////////////////////// TRIANGLE */

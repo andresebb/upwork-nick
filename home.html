@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Credit</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
@@ -13,11 +13,14 @@
   </head>
   <body>
     <main>
-      <header class="header">
+      <header class="header" >
         <a href="./home.html" class="header__image">
           <img src="./images/logo.png" alt="" />
         </a>
-        <nav class="navigation">
+        <div class="header__menu--container" id="menu-logo">
+          <img src="./images/menu.svg" alt="" />
+        </div>
+        <nav class="navigation menu animate" id="menu">
           <ul class="navigation__list">
             <li>
               <a href="/home.html">Home</a>
@@ -153,48 +156,37 @@
                 <p class="box-item">560-619</p>
                 <p class="box-item gray">500-559</p>
               </div>
-            <div class="cost-grid">
+
               <div class="cost-box">
-                <p class="box-title">Credit Score</p>
-                <p class="box-item">720 & above</p>
-                <p class="box-item gray">700-719</p>
-                <p class="box-item">675-699</p>
-                <p class="box-item gray">620-674</p>
-                <p class="box-item">560-619</p>
-                <p class="box-item gray">500-559</p>
+                <p class="box-title">Interest Rate</p>
+                <p class="box-item">5.9%</p>
+                <p class="box-item gray">6.3%</p>
+                <p class="box-item">6.6%</p>
+                <p class="box-item gray">7.6%</p>
+                <p class="box-item">8.5%</p>
+                <p class="box-item gray">9.4%</p>
               </div>
-            <div class="cost-grid">
+            
               <div class="cost-box">
-                <p class="box-title">Credit Score</p>
-                <p class="box-item">720 & above</p>
-                <p class="box-item gray">700-719</p>
-                <p class="box-item">675-699</p>
-                <p class="box-item gray">620-674</p>
-                <p class="box-item">560-619</p>
-                <p class="box-item gray">500-559</p>
+                <p class="box-title">Monthly Payment</p>
+                <p class="box-item">$1482.84</p>
+                <p class="box-item gray">$1547.43</p>
+                <p class="box-item">$1596.65</p>
+                <p class="box-item gray">$1765.19</p>
+                <p class="box-item">$1922.28</p>
+                <p class="box-item gray">$2083.92</p>
               </div>
-            <div class="cost-grid">
+            
               <div class="cost-box">
-                <p class="box-title">Credit Score</p>
-                <p class="box-item">720 & above</p>
-                <p class="box-item gray">700-719</p>
-                <p class="box-item">675-699</p>
-                <p class="box-item gray">620-674</p>
-                <p class="box-item">560-619</p>
-                <p class="box-item gray">500-559</p>
+                <p class="box-title">Interest Paid</p>
+                <p class="box-item">$533,822</p>
+                <p class="box-item gray">$557,074</p>
+                <p class="box-item">$574,794</p>
+                <p class="box-item gray">$634,468</p>
+                <p class="box-item">$692,020</p>
+                <p class="box-item gray">$750,211</p>
               </div>
-            <div class="cost-grid">
-              <div class="cost-box">
-                <p class="box-title">Credit Score</p>
-                <p class="box-item">720 & above</p>
-                <p class="box-item gray">700-719</p>
-                <p class="box-item">675-699</p>
-                <p class="box-item gray">620-674</p>
-                <p class="box-item">560-619</p>
-                <p class="box-item gray">500-559</p>
-              </div>
-             
-            </div>
+            
           </div>
           </div>
         </div>
@@ -307,8 +299,8 @@
           <h2 class="partner-title">Affilate Partners</h2>
           <p>We Are a Customer-Focused, Results-Oriented Organization Committed to Developing Strong Relationships, Delivering Predictable Results and Teaching Innovative Credit and Credit Score Solutions. Contact now for affiliation inquires: support@credit101.com</p>
         </div>
-        <div>
-          <iframe width="547" height="307" src="https://www.youtube.com/embed/LPR5I99tVE8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-container">
+          <iframe class="video-partner" width="547" height="307" src="https://www.youtube.com/embed/LPR5I99tVE8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
       <section class="testimonials">
@@ -325,7 +317,6 @@
               <p>Steven H.</p>
             </div>
           </div>
-          <a href="" class="testimonial-anclo">What you need to know about our testimonials</a>
         </div>
       </section>
       <section class="repair">
@@ -447,5 +438,13 @@
         </div>
       </footer>
     </main>
+    <script>
+      const menuLogo = document.getElementById("menu-logo");
+      const menu = document.getElementById("menu")
+
+      menuLogo.addEventListener("click", () => {
+        menu.classList.toggle("active-burger")
+      });
+    </script>
   </body>
 </html>
